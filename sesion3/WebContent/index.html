@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<form action= method="post">
+<form action="http://localhost:8080/sesion3/Sesion3servlet" method="GET">
 <fieldset>
 <legend>Registrate:</legend>
  Nombre:<br>
@@ -13,13 +13,24 @@
    Apellidos:<br>
   <input type="text" name="Apellidos" value="">
   <br>
-    Correo Electronico:<br>
-  <input type="text" name="Mail" value="">
+    DNI:<br>
+  <input type="text" name="DNI" value="" >
+  <br>
+  <br>
+  <input type="submit" value="Registro">
+  </fieldset>
+  </form>
+  <form action="http://localhost:8081/sesion3/S3servlet" method="POST">
+<fieldset>
+ <legend>Login:</legend> 
+  Nombre:<br>
+  <input type="text" name="Nombre" value="">
   <br>
     DNI:<br>
   <input type="text" name="DNI" value="" >
   <br>
-  <input type="submit" value="Registro">
+   <br>
+  <input type="submit" value="Login">
   </fieldset>
   </form>
 </body>
