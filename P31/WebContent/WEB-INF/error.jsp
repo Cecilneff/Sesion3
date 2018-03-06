@@ -7,6 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>no eres admin</p>
+<form action="http://localhost:8080/P31/Jp31" method="GET">
+<fieldset>
+<legend>Registrate:</legend>
+ Nombre:<br>
+  <input type="text" name="Nombre" value="">
+  <br>
+   Apellidos:<br>
+  <input type="text" name="Apellido" value="">
+  <br>
+    DNI:<br>
+  <input type="text" name="DNI" value="" >
+  <br>
+  <br>
+  <input type="submit" value="Registro">
+  </fieldset>
+  </form>
 </body>
 </html>

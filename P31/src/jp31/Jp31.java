@@ -28,8 +28,12 @@ public class Jp31 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		/*String url ="/WEB-INF/admin.jsp";
-		getServletContext().getRequestDispatcher(url).forward(request, response);*/
+		String Nombre=request.getParameter("Nombre");
+		String Apellido=request.getParameter("Apellido");
+		String DNI=request.getParameter("DNI");
+		UserTemporales UserT = new UserTemporales (Nombre,Apellido,DNI);
+		//String url="/WEB-INF/Welcome.jsp";
+		//getServletContext().getRequestDispatcher(url).forward(request, response);
 	}
 
 	/**
